@@ -66,7 +66,10 @@
               <h1 class="text-4xl font-semibold mb-10">Sportswear</h1>
               <!-- SportsWear Container -->
               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-                <div class="p-5 bg-white rounded-lg text-center">
+                <div
+                  class="p-5 bg-white rounded-lg text-center cursor-pointer"
+                  id="black-cap"
+                >
                   <div
                     class="bg-gray-100 h-56 w-full rounded-lg flex justify-center items-center"
                   >
@@ -81,9 +84,14 @@
                     <i class="fa-regular fa-star text-2xl text-yellow-400"></i>
                   </div>
                   <h4 class="text-xl font-semibold my-2">Sports Back Cap</h4>
-                  <p class="text-xl text-gray-400">49.00 TK</p>
+                  <p class="text-xl text-gray-400">
+                    <span id="black-cap-price">49.00</span> TK
+                  </p>
                 </div>
-                <div class="p-5 bg-white rounded-lg text-center">
+                <div
+                  class="p-5 bg-white rounded-lg text-center cursor-pointer"
+                  id="jersey-set"
+                >
                   <div
                     class="bg-gray-100 h-56 w-full rounded-lg flex justify-center items-center"
                   >
@@ -98,9 +106,14 @@
                     <i class="fa-regular fa-star text-2xl text-yellow-400"></i>
                   </div>
                   <h4 class="text-xl font-semibold my-2">Full Jersey Set</h4>
-                  <p class="text-xl text-gray-400">69.00 TK</p>
+                  <p class="text-xl text-gray-400">
+                    <span id="jersey-set-price">69.00</span> TK
+                  </p>
                 </div>
-                <div class="p-5 bg-white rounded-lg text-center">
+                <div
+                  class="p-5 bg-white rounded-lg text-center cursor-pointer"
+                  id="sports-cates"
+                >
                   <div
                     class="bg-gray-100 h-56 w-full rounded-lg flex justify-center items-center"
                   >
@@ -115,7 +128,9 @@
                     <i class="fa-regular fa-star text-2xl text-yellow-400"></i>
                   </div>
                   <h4 class="text-xl font-semibold my-2">Sports cates</h4>
-                  <p class="text-xl text-gray-400">159.00 TK</p>
+                  <p class="text-xl text-gray-400">
+                    <span id="sports-cates-price">159.00</span> TK
+                  </p>
                 </div>
               </div>
             </div>
@@ -124,7 +139,10 @@
               <h1 class="text-4xl font-semibold mb-10 mt-16">Furniture</h1>
               <!-- SportsWear Container -->
               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-                <div class="p-5 bg-white rounded-lg text-center">
+                <div
+                  class="p-5 bg-white rounded-lg text-center cursor-pointer"
+                  id="relax-chair"
+                >
                   <div
                     class="bg-gray-100 h-56 w-full rounded-lg flex justify-center items-center"
                   >
@@ -138,9 +156,14 @@
                     <i class="fa-regular fa-star text-2xl text-yellow-400"></i>
                   </div>
                   <h4 class="text-xl font-semibold my-2">Single Relax Chair</h4>
-                  <p class="text-xl text-gray-400">185.00 TK</p>
+                  <p class="text-xl text-gray-400">
+                    <span id="relax-chair-price">185.00</span> TK
+                  </p>
                 </div>
-                <div class="p-5 bg-white rounded-lg text-center">
+                <div
+                  class="p-5 bg-white rounded-lg text-center cursor-pointer"
+                  id="chidren-chair"
+                >
                   <div
                     class="bg-gray-100 h-56 w-full rounded-lg flex justify-center items-center"
                   >
@@ -154,9 +177,14 @@
                     <i class="fa-solid fa-star text-2xl text-yellow-400"></i>
                   </div>
                   <h4 class="text-xl font-semibold my-2">Children play</h4>
-                  <p class="text-xl text-gray-400">299.00 TK</p>
+                  <p class="text-xl text-gray-400">
+                    <span id="chidren-chair-price">299.00</span> TK
+                  </p>
                 </div>
-                <div class="p-5 bg-white rounded-lg text-center">
+                <div
+                  class="p-5 bg-white rounded-lg text-center cursor-pointer"
+                  id="sofa-chair"
+                >
                   <div
                     class="bg-gray-100 h-56 w-full rounded-lg flex justify-center items-center"
                   >
@@ -170,7 +198,9 @@
                     <i class="fa-solid fa-star text-2xl text-yellow-400"></i>
                   </div>
                   <h4 class="text-xl font-semibold my-2">Flexible Sofa</h4>
-                  <p class="text-xl text-gray-400">339.00 TK</p>
+                  <p class="text-xl text-gray-400">
+                    <span id="sofa-chair-price">339.00</span> TK
+                  </p>
                 </div>
               </div>
             </div>
@@ -182,12 +212,15 @@
               <h3 class="text-2xl ml-5 font-medium">Have coupon?</h3>
               <div class="border mx-5 rounded-lg my-3">
                 <input
+                id="coupon-input"
                   class="py-2 w-44 h-14 pl-3 text-xl rounded-l-lg focus:outline-0"
                   type="text"
                   placeholder="Coupon code"
                 />
                 <button
-                  class="bg-[#E527B2] font-semibold text-white text-xl h-14 w-24 rounded-r-lg"
+                disabled
+                  id="coupon-button"
+                  class="btn normal-case hover:bg-[#EC67C9] bg-[#E527B2] font-semibold text-white text-xl h-14 w-24 rounded-r-lg"
                 >
                   Apply
                 </button>
@@ -204,17 +237,24 @@
               <div class="mx-5">
                 <hr class="mb-5" />
                 <p class="text-2xl font-medium">
-                  Total Price: <span class="text-gray-400">257.00TK</span>
+                  Total Price:
+                  <span class="text-gray-400" id="total-price">0</span
+                  ><span class="text-gray-400">TK</span>
                 </p>
                 <p class="text-2xl font-medium mt-2">
-                  Discount: <span class="text-gray-400">51.40TK</span>
+                  Discount:
+                  <span class="text-gray-400" id="discount-price">0</span
+                  ><span class="text-gray-400">TK</span>
                 </p>
                 <p class="text-2xl font-medium mt-2">
-                  Total: <span class="text-gray-400">205.60TK</span>
+                  Total: <span class="text-gray-400" id="final-price">0</span
+                  ><span class="text-gray-400">TK</span>
                 </p>
                 <hr class="my-5" />
                 <button
-                  class="bg-[#E527B2] mt-2 font-semibold h-14 w-full text-white text-xl rounded-lg"
+                  disabled
+                  id="purchase-button"
+                  class="btn normal-case hover:bg-[#EC67C9] bg-[#E527B2] mt-2 font-semibold h-14 w-full text-white text-xl rounded-lg"
                 >
                   Make Purchase
                 </button>
@@ -224,5 +264,7 @@
         </div>
       </section>
     </main>
+    <!-- JavaScript Link -->
+    <script src="./scripts/scripts.js"></script>
   </body>
 </html>
