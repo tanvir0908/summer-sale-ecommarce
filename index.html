@@ -251,12 +251,33 @@
                 </p>
                 <hr class="my-5" />
                 <button
+                  onclick="my_modal_1.showModal()"
                   disabled
                   id="purchase-button"
                   class="btn normal-case hover:bg-[#EC67C9] bg-[#E527B2] mt-2 font-semibold h-14 w-full text-white text-xl rounded-lg"
                 >
                   Make Purchase
                 </button>
+                <!-- Purchase Button Modal -->
+                <dialog id="my_modal_1" class="modal">
+                  <form method="dialog" class="modal-box text-center py-20">
+                    <img
+                      class="mx-auto mb-10"
+                      src="./images/congo.png"
+                      alt=""
+                    />
+                    <h3 class="font-bold text-4xl">Contratulations</h3>
+                    <p class="mt-5 mb-10 text-gray-400">
+                      You purchased the products
+                    </p>
+                    <!-- class="btn normal-case hover:bg-[#EC67C9] bg-[#E527B2] mt-2 font-semibold h-14 w-full text-white text-xl rounded-lg" -->
+                    <button
+                      class="btn normal-case hover:bg-[#EC67C9] bg-[#E527B2] px-10 text-white mx-auto text-xl h-14 font-semibold"
+                    >
+                      <a href="index.html">Go Home</a>
+                    </button>
+                  </form>
+                </dialog>
               </div>
             </div>
           </div>
