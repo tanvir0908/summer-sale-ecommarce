@@ -66,7 +66,7 @@ document.getElementById("coupon-button").addEventListener("click", function () {
   const couponText = document.getElementById("coupon-input").value;
   let totalPrice = parseFloat(document.getElementById("total-price").innerText);
   let finalPrice = parseFloat(document.getElementById("final-price").innerText);
-  if (couponText == "SALE200") {
+  if (couponText == "SELL200") {
     let newDiscountPrice = totalPrice * 0.2;
     document.getElementById("discount-price").innerText =
       newDiscountPrice.toFixed(2);
